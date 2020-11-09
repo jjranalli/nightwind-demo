@@ -1,0 +1,12 @@
+@mixin variantColor($color) {
+    @apply bg-#{$color}-base;
+    &:hover {
+        transition: background-color 0.2s;
+        @apply bg-#{$color}-hover;
+    }
+    &:active {
+        outline: none;
+        transition: background-color 0.2s;
+        @apply bg-#{$color}-active;
+    }
+}
