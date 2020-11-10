@@ -21,7 +21,7 @@ export default function Home() {
                 <div className="text-center pb-6">
                     <Nightwind />
                 </div>
-                <p className="">Click to see it in action</p>
+                <p className="">Click to see it in action.</p>
             </main>
 
         </Layout>
