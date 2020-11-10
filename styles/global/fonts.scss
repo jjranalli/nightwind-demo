@@ -1,9 +1,15 @@
 h1 {
-  @apply text-4xl font-semibold;
+  @apply pb-2 text-4xl font-medium duration-300 transition-colors;
+  @screen md {
+    @apply text-5xl;
+  }
 }
 
 h2 {
-  @apply text-3xl font-semibold;
+  @apply pt-1 text-xl font-medium duration-300 transition-colors;
+  @screen md {
+    @apply text-2xl;
+  }
 }
 
 h3 {

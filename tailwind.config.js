@@ -27,9 +27,10 @@ module.exports = {
     'nightwind': ['hover', 'focus'],
 
     // Enable overrides
-    textColor: ({ after }) => after(['dark', 'dark-hover', 'dark-focus', 'dark-placeholder']),
+    textColor: ({ after }) => after(['dark', 'dark-hover', 'dark-focus', 'dark-placeholder', 'group-hover', 'dark-group-hover']),
     backgroundColor: ({ after }) => after(['dark', 'dark-hover', 'dark-focus', 'dark-placeholder']),
-    borderColor: ({ after }) => after(['dark', 'dark-hover', 'dark-focus', 'dark-placeholder'])
+    borderColor: ({ after }) => after(['dark', 'dark-hover', 'dark-focus', 'dark-placeholder']),
+    borderWidth: ({ after }) => after(['dark'])
   },
 
   plugins: [

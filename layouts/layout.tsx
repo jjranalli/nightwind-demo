@@ -18,7 +18,7 @@ export default function Layout({children}) {
         <>
         {/* <ThemeProvider> */}
             <Head>
-                <title>next-template</title>
+                <title>Nightwind</title>
                 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
 
                 {/* A maybe useful composable head?
@@ -55,12 +55,13 @@ export default function Layout({children}) {
                 // <meta name="theme-color" content="#118b92" /> */}
                 
             </Head>
-            
-            <Navbar />
+            <div className="min-h-screen flex flex-col justify-between">
+                <Navbar />
 
-            {children}
-            
-            <Footer />
+                {children}
+                
+                <Footer />
+            </div>
         {/* </ThemeProvider> */}
         </>
     )
