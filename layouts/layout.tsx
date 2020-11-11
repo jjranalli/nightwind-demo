@@ -10,7 +10,7 @@ import nightwind from 'nightwind/helper'
 export default function Layout({children}) {
 
     useEffect(() => {
-        nightwind.addNightTransitions()
+        // nightwind.addNightTransitions()
         nightwind.initNightMode()
     }, []);
     
