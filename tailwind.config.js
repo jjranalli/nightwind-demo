@@ -1,36 +1,53 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
+  experimental: {
+    applyComplexClasses: true,
+    darkModeVariant: true
+  },
+  dark: 'class',
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: [
-    './node_modules/nightwind/src/index.js',
+  purge: 
+  {
+    enabled: false,
+    content : 
+    [
     './pages/**/*.tsx',
     './pages/**/*.js',
-    './components/**/*.tsx',
     './components/**/*.js',
+    './components/**/*.jsx',
+    './components/**/*.tsx',
     './components/**/*.scss',
     './layouts/**/*.tsx',
     './layouts/**/*.js',
     './layouts/**/*.scss',
     './styles/**/*.scss'
-  ],
+    ],
+  },
 
   theme: {
     extend: {
-      screens: {},
-      colors: {},
+      colors: {
+        'primary': {
+          100: '#caf0f8',
+          300: '#90e0ef',
+          500: '#00b4d8',
+          700: '#0077b6',
+          900: '#03045e',
+        }
+      },
+      transitionDuration: {
+        // 'nightwind': '1000ms' // default '200ms'
+      }
     },
   },
 
   variants: {
     'nightwind': ['hover', 'focus'],
-
-    // Enable overrides
-    textColor: ({ after }) => after(['dark', 'dark-hover', 'dark-focus', 'dark-placeholder', 'group-hover', 'dark-group-hover']),
-    backgroundColor: ({ after }) => after(['dark', 'dark-hover', 'dark-focus', 'dark-placeholder']),
-    borderColor: ({ after }) => after(['dark', 'dark-hover', 'dark-focus', 'dark-placeholder']),
-    borderWidth: ({ after }) => after(['dark'])
+    textColor: ({ after }) => after(['group-hover'])
   },
 
   plugins: [
