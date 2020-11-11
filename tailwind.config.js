@@ -10,11 +10,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: 
-  {
-    enabled: false,
-    content : 
-    [
+  purge: [
     './pages/**/*.tsx',
     './pages/**/*.js',
     './components/**/*.js',
@@ -26,7 +22,6 @@ module.exports = {
     './layouts/**/*.scss',
     './styles/**/*.scss'
     ],
-  },
 
   theme: {
     extend: {
