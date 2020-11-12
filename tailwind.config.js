@@ -1,3 +1,5 @@
+// import { whitelistedClasses } from './layouts/background/lines.tsx'
+
 module.exports = {
   experimental: {
     applyComplexClasses: true,
@@ -8,7 +10,9 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: [
+  purge: {
+  enabled: true,
+  content: [
     './pages/**/*.tsx',
     './pages/**/*.js',
     './components/**/*.js',
@@ -20,13 +24,13 @@ module.exports = {
     './layouts/**/*.scss',
     './styles/**/*.scss'
     ],
+  // options: {
+  //   whitelist: whitelistedClasses,
+  // }
+  },
 
   theme: {
     extend: {
-      zIndex: {
-        '-10': '-10',
-        '-20': '-20'
-      },
       colors: {
         'primary': {
           100: '#caf0f8',
@@ -37,7 +41,7 @@ module.exports = {
         }
       },
       transitionDuration: {
-        // 'nightwind': '1000ms' // default '300ms'
+        // 'nightwind': '500ms' // default '300ms'
       }
     },
   },

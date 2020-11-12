@@ -21,7 +21,9 @@ export default function Home() {
                     <h3 className=""><span className="text-teal-700">Tailwind</span> dark mode plugin</h3>
                 </div>
                 <div className="px-4">
-                    <Lines />
+                    <div className="lines-container">
+                        <Lines />
+                    </div>
                 </div>
                 <div className="my-12 text-center">
                     <Nightwind 
