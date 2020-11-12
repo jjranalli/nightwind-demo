@@ -8,22 +8,6 @@ body {
 	Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 };
 
-
-
 body {
-	@apply bg-gray-100 text-gray-900;
-}
-
-
-.nightcard {	
-	@apply bg-gray-800 text-left max-w-md rounded-xl my-12 px-6 py-4 mx-auto;	
-	h3 {
-		@apply text-orange-200 dark:text-orange-600 pb-2 md:text-xl;
-	}
-	p {
-		@apply text-gray-100 pb-1;
-		span {
-			@apply text-blue-200 font-medium;
-		}
-	}
+	@apply relative -z-20 bg-gray-100 text-gray-900;
 }

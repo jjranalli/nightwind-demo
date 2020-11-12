@@ -1,5 +1,3 @@
-const plugin = require('tailwindcss/plugin')
-
 module.exports = {
   experimental: {
     applyComplexClasses: true,
@@ -25,6 +23,10 @@ module.exports = {
 
   theme: {
     extend: {
+      zIndex: {
+        '-10': '-10',
+        '-20': '-20'
+      },
       colors: {
         'primary': {
           100: '#caf0f8',
@@ -35,7 +37,7 @@ module.exports = {
         }
       },
       transitionDuration: {
-        // 'nightwind': '1000ms' // default '200ms'
+        // 'nightwind': '1000ms' // default '300ms'
       }
     },
   },
