@@ -8,7 +8,7 @@ export default function Navbar() {
         <header className="">
             <nav className="p-6 flex justify-end max-w-screen-lg mx-auto">
                 <Link href="https://github.com/jjranalli/nightwind">
-                    <a><Github /></a>
+                    <a aria-label="Link to Github"><Github /></a>
                 </Link>
             </nav>
         </header>

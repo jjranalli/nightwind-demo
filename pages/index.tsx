@@ -99,7 +99,7 @@ export default function Home() {
                     <h3>An automatic, <span className="dark:text-yellow-200">overridable</span>, <span className="text-primary-700 border-b-2 border-gray-100 dark:border-yellow-300 dark:duration-nightwind ">customisable</span></h3>
                     <h3 className=""><span className="text-teal-700">Tailwind</span> dark mode plugin</h3>
                 </div>
-                <div className="px-4">
+                <div className="px-2">
                     <div className="lines-container">
                         <Lines 
                             lines={lines} 
