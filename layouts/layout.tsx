@@ -34,7 +34,7 @@ export default function Layout({children}) {
         
                 <meta name="twitter:title" content={title + subtitle} />
                 <meta name="twitter:description" content={description} />
-                <meta name="twitter:image" content='/twitter_card.jpg' />
+                <meta name="twitter:image" content='https://nightwindcss.com/twitter_card.jpg' />
                 <meta name="twitter:card" content="summary_large_image" />
 
                 <link rel="icon" type="image/svg+xml" href='/nightwind.svg'/>
