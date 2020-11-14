@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 const _ = require('lodash')
 
-export default function Lines(props) {
+export default function Lines({height, width, paths}) {
 
     // const width = 600
     // const height = 300
@@ -66,38 +66,38 @@ export default function Lines(props) {
 
     return (
         <>
-          {[...Array(props.lines)].map((e, i) => (
             <svg
-                key={i}
-                viewBox={`0 0 ${props.width} ${props.height}`}
-                width={props.width}
-                height={props.height}
+                viewBox={`0 0 ${width} ${height}`}
+                width={width}
+                height={height}
                 baseProfile='full'>
-                <motion.path
-                    d={
-                        `M 0 ${props.paths[i].heightStart} 
-                        C ${props.paths[i].c1_1} ${props.paths[i].c1_2}, 
-                        ${props.paths[i].c2_1} ${props.paths[i].c2_2}, 
-                        ${props.width} ${props.paths[i].heightEnd}`
-                    }
-                    className= {`${props.randomClass[i]}`}
-                    style={{ 
-                        fill:"transparent", 
-                        stroke: "currentColor",
-                        strokeWidth: '1.5px'
-                    }}
-                    
-                    animate={{ 
-                        d: 
-                            `M 0 ${props.paths[i].heightEnd} 
-                            C ${props.paths[i].c1_1} ${props.paths[i].c1_2rev}, 
-                            ${props.paths[i].c2_1} ${props.paths[i].c2_2rev}, 
-                            ${props.width} ${props.paths[i].heightStart}`
-                    }}
-                    transition={{ duration: `${props.paths[i].duration}`, repeat: Infinity, repeatType: "reverse" }}
-                />
+                {paths.map((path, i) => (
+                    <motion.path
+                        key={i}
+                        d={
+                            `M 0 ${path.heightStart} 
+                            C ${path.c1_1} ${path.c1_2}, 
+                            ${path.c2_1} ${path.c2_2}, 
+                            ${width} ${path.heightEnd}`
+                        }
+                        className= {`${path.randomClass}`}
+                        style={{ 
+                            fill:"transparent", 
+                            stroke: "currentColor",
+                            strokeWidth: '1.5px'
+                        }}
+                        
+                        animate={{ 
+                            d: 
+                                `M 0 ${path.heightEnd} 
+                                C ${path.c1_1} ${path.c1_2rev}, 
+                                ${path.c2_1} ${path.c2_2rev}, 
+                                ${width} ${path.heightStart}`
+                        }}
+                        transition={{ duration: `${path.duration}`, repeat: Infinity, repeatType: "reverse" }}
+                    />
+                ))}
             </svg> 
-        ))}
         </>
     );
 }
