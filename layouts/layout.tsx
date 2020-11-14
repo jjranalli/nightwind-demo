@@ -6,7 +6,6 @@ import styles from './layout.module.scss'
 import { useEffect } from 'react'
 import nightwind from 'nightwind/helper'
 
-
 export default function Layout({children}) {
 
     const title = 'Nightwind'
@@ -14,8 +13,7 @@ export default function Layout({children}) {
     const description = 'An automatic, overridable, customisable Tailwind dark mode plugin.'
 
     useEffect(() => {
-        nightwind.addNightTransitions()
-        nightwind.initNightMode()
+        nightwind.initNightwind()
     }, []);
     
     return(

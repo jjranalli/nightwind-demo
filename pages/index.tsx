@@ -111,7 +111,7 @@ export default function Home() {
                 </div>
                 <div className="mb-12 text-center">
                     <div className="pb-8">
-                        <Link href='#'>
+                        <Link href='#0'>
                             <button className="bg-indigo-200 hover:bg-indigo-300 border-opacity-50 border-pink-700 border-2 rounded-md p-2 px-8 focus:outline-none" onClick={() => setRandomClass([])}>Shuffle colors</button>
                         </Link>
                     </div>
