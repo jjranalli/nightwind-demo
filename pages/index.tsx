@@ -120,7 +120,7 @@ export default function Home() {
                 <div className="mb-12 text-center">
                     <div className="pb-8">
                         <Link href='#0'>
-                            <button className="bg-indigo-200 hover:bg-indigo-300 border-opacity-50 border-pink-700 border-2 rounded-md p-2 px-8 focus:outline-none" 
+                            <button className="bg-indigo-200 hover:bg-indigo-300 ring-opacity-50 hover:ring-opacity-100 ring-pink-700 ring-offset-gray-100 ring-2 ring-offset-2 rounded-md p-2 px-8 focus:outline-none" 
                                     onClick={handleSetPaths}>Shuffle colors</button>
                         </Link>
                     </div>

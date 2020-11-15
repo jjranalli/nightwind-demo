@@ -1,17 +1,16 @@
-// import { whitelistedClasses } from './layouts/background/lines.tsx'
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   experimental: {
-    applyComplexClasses: true,
     darkModeVariant: true
   },
   dark: 'class',
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
   },
   purge: {
-  enabled: true,
+  // enabled: true,
+  enabled: false,
   content: [
     './pages/**/*.tsx',
     './pages/**/*.js',
@@ -58,7 +57,8 @@ module.exports = {
 
   variants: {
     'nightwind': ['hover', 'focus'],
-    textColor: ({ after }) => after(['group-hover'])
+    textColor: ({ after }) => after(['group-hover']),
+    ringOpacity: ({ after }) => after(['hover'])
   },
 
   plugins: [
