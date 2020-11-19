@@ -1,7 +1,7 @@
 .nightcard {	
 	@apply bg-gray-800 text-left max-w-md rounded-xl my-12 px-6 py-4 mx-auto;	
 	h3 {
-		@apply text-orange-200 dark:text-orange-600 pb-2 md:text-xl;
+		@apply text-amber-200 dark:text-amber-600 pb-2 md:text-xl;
 	}
 	p {
 		@apply text-gray-100 pb-1;
@@ -12,7 +12,7 @@
 }
 
 .lines-container {
-	@apply bg-gray-300 dark:bg-gray-800 relative w-full py-4 my-8 mx-auto max-w-full overflow-hidden rounded-xl;
+	@apply bg-gray-300 dark:bg-gray-800 relative w-full py-4 mt-8 mb-6 mx-auto max-w-full overflow-hidden rounded-xl;
 	height: 300px;
 	width: 600px;
 

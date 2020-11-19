@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Navbar from './navbar/navbar'
 import Footer from './footer/footer'
-import styles from './layout.module.scss'
 
 import { useEffect } from 'react'
 import nightwind from 'nightwind/helper'

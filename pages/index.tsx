@@ -5,25 +5,21 @@ const _ = require('lodash')
 import Head from 'next/head'
 import Layout from '../layouts/layout'
 import Lines from '../layouts/background/lines'
-import styles from '../styles/Home.module.scss'
 
 import Nightwind from '../components/toggle'
 
 export default function Home() {
 
-    const lines = 10
+    const lines = 12
     const width = 600
     const height = 300
 
-    // const [randomClass, setRandomClass] = useState([])
     const [paths, setPaths] = useState([])
 
     function randomWave() {
         const randomWeight = Math.floor(Math.random() * (10 - 3) + 3) * 100;
-        const randomIndex = Math.floor(Math.random() * (9))
-        const classes = ['red', 'orange', 'yellow', 'green', 'teal', 'blue', 'indigo', 'purple', 'pink']
-        // setRandomClass(randomClass => [...randomClass, `text-${classes[randomIndex]}-${randomWeight}`])
-        // randomClass.push(`text-${classes[randomIndex]}-${randomWeight}`)
+        const randomIndex = Math.floor(Math.random() * (17))
+        const classes = ['red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'lightBlue', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose']
         const randomClass = `text-${classes[randomIndex]}-${randomWeight}`
 
         return randomClass
@@ -91,11 +87,6 @@ export default function Home() {
 
         _.times(lines, randomPath)
     }, [])
-    
-    // function handleSetRandomClass(randomClass, props) {
-    //     setRandomClass([])
-    //     console.log('shuffle')
-    // }
 
     return (
         <Layout>
@@ -117,12 +108,20 @@ export default function Home() {
                             height={height}/>
                     </div>
                 </div>
-                <div className="mb-12 text-center">
-                    <div className="pb-8">
-                        <Link href='#0'>
-                            <button className="bg-indigo-200 hover:bg-indigo-300 ring-opacity-50 hover:ring-opacity-100 ring-pink-700 ring-offset-gray-100 ring-2 ring-offset-2 rounded-md p-2 px-8 focus:outline-none" 
-                                    onClick={handleSetPaths}>Shuffle colors</button>
-                        </Link>
+                <div className="mb-8 text-center">
+                    <div className="pb-8 divide-y divide-lightBlue-700 hover:divide-pink-700">
+                    
+                        <div className="pb-6 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 max-w-screen-sm mx-auto">
+                            {paths.map((path, i) => (
+                                <p key={i} className={`py-1 ${path.randomClass}`}>{path.randomClass.split('-').splice(1, 2).join('-')}</p>
+                            ))}
+                        </div>
+                        <div className="pt-10">
+                            <Link href='#0'>
+                                <button className="bg-indigo-200 hover:bg-indigo-300 ring-opacity-50 hover:ring-opacity-100 ring-pink-700 ring-offset-gray-100 ring-2 ring-offset-2 rounded-md p-2 px-8 focus:outline-none" 
+                                        onClick={handleSetPaths}>Shuffle colors</button>
+                            </Link>
+                        </div>
                     </div>
                     <Nightwind 
                         size="h-16 md:h-20"
