@@ -95,8 +95,8 @@ export default function Home() {
             </Head>
 
             <main className="text-center">
-                <div className="pt-12 mx-auto max-w-screen-sm">
-                    <h1 className="leading-normal inline-block mx-auto bg-clip-text text-transparent bg-gradient-to-br from-violet-700 to-cyan-700">Nightwind</h1>
+                <div className="md:pt-10 mx-auto max-w-screen-sm">
+                    <h1 className="leading-normal inline-block mx-auto bg-clip-text text-transparent bg-gradient-to-br from-violet-800 to-lightBlue-600">Nightwind</h1>
                     <h3>An automatic, <span className="dark:text-yellow-200">overridable</span>, <span className="text-primary-700 border-b-2 border-gray-100 dark:border-yellow-300 dark:duration-nightwind ">customisable</span></h3>
                     <h3 className="">Tailwind dark mode plugin</h3>
                 </div>
@@ -111,18 +111,18 @@ export default function Home() {
                 <div className="mb-8 text-center">
                     <div className="pb-8 divide-y-2 divide-lightBlue-700 hover:divide-pink-700">
                     
-                        <div className="pb-10 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 max-w-screen-sm mx-auto cursor-default">
+                        <div className="pb-6 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 max-w-screen-sm mx-auto cursor-default">
                             {paths.map((path, i) => (
-                                <div key={i} className={`py-1 bg-white rounded-md m-2 border-2 ${path.randomClass} border-${path.randomClass.split('-').splice(1, 2).join('-')} ring-${path.randomClass.split('-').splice(1, 2).join('-')} ring-2 ring-opacity-30 hover:ring-opacity-60`}>
+                                <div key={i} className={`text-sm py-1 bg-white rounded-md m-1.5 border-2 ${path.randomClass} border-${path.randomClass.split('-').splice(1, 2).join('-')} ring-${path.randomClass.split('-').splice(1, 2).join('-')} ring-2 ring-opacity-30 hover:ring-opacity-60`}>
                                     <p>
                                         {path.randomClass.split('-').splice(1, 2).join('-')}
                                     </p>
                                 </div>
                             ))}
                         </div>
-                        <div className="pt-12">
+                        <div className="pt-8">
                             <Link href='#0'>
-                                <button className="bg-indigo-200 hover:bg-indigo-300 rounded-md p-2 px-8 focus:outline-none ring-offset-gray-100 ring-2 ring-offset-2 ring-fuchsia-600" 
+                                <button className="bg-indigo-200 hover:bg-indigo-300 rounded-md py-1.5 px-8 focus:outline-none ring-offset-gray-100 ring-2 ring-offset-2 ring-fuchsia-600" 
                                         onClick={handleSetPaths}>Shuffle colors</button>
                             </Link>
                         </div>
