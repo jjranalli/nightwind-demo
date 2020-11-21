@@ -21,7 +21,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", "javascript/themeContext.js"
+    "**/*.tsx", "javascript/themeContext.js", "layouts/background/lines.jsx"
   ],
   "exclude": [
     "node_modules"

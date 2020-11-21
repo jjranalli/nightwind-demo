@@ -20,7 +20,7 @@ export default function Lines({height, width, paths}) {
                         }
                         className= {`${path.randomClass}`}
                         style={{ 
-                            fill:"none", 
+                            fill:"transparent", 
                             stroke: "currentColor",
                             strokeWidth: '1.5px'
                         }}
