@@ -57,8 +57,8 @@ module.exports = {
   //   removeDeprecatedGapUtilities: true,
   // },
   purge: {
-  // enabled: true,
-  enabled: false,
+  enabled: true,
+  // enabled: false,
   content: [
     './pages/**/*.tsx',
     './pages/**/*.js',
