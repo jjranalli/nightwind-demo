@@ -96,9 +96,9 @@ export default function Home() {
 
             <main className="text-center">
                 <div className="pt-12 mx-auto max-w-screen-sm">
-                    <h1 className="text-indigo-700">Nightwind</h1>
+                    <h1 className="leading-normal inline-block mx-auto bg-clip-text text-transparent bg-gradient-to-br from-violet-700 to-cyan-700">Nightwind</h1>
                     <h3>An automatic, <span className="dark:text-yellow-200">overridable</span>, <span className="text-primary-700 border-b-2 border-gray-100 dark:border-yellow-300 dark:duration-nightwind ">customisable</span></h3>
-                    <h3 className=""><span className="text-teal-700">Tailwind</span> dark mode plugin</h3>
+                    <h3 className="">Tailwind dark mode plugin</h3>
                 </div>
                 <div className="px-2">
                     <div className="lines-container">
@@ -109,26 +109,30 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="mb-8 text-center">
-                    <div className="pb-8 divide-y divide-lightBlue-700 hover:divide-pink-700">
+                    <div className="pb-8 divide-y-2 divide-lightBlue-700 hover:divide-pink-700">
                     
-                        <div className="pb-6 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 max-w-screen-sm mx-auto">
+                        <div className="pb-10 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 max-w-screen-sm mx-auto cursor-default">
                             {paths.map((path, i) => (
-                                <p key={i} className={`py-1 ${path.randomClass}`}>{path.randomClass.split('-').splice(1, 2).join('-')}</p>
+                                <div key={i} className={`py-1 bg-white rounded-md m-2 border-2 ${path.randomClass} border-${path.randomClass.split('-').splice(1, 2).join('-')} ring-${path.randomClass.split('-').splice(1, 2).join('-')} ring-2 ring-opacity-30 hover:ring-opacity-60`}>
+                                    <p>
+                                        {path.randomClass.split('-').splice(1, 2).join('-')}
+                                    </p>
+                                </div>
                             ))}
                         </div>
-                        <div className="pt-10">
+                        <div className="pt-12">
                             <Link href='#0'>
-                                <button className="bg-indigo-200 hover:bg-indigo-300 ring-opacity-50 hover:ring-opacity-100 ring-pink-700 ring-offset-gray-100 ring-2 ring-offset-2 rounded-md p-2 px-8 focus:outline-none" 
+                                <button className="bg-indigo-200 hover:bg-indigo-300 rounded-md p-2 px-8 focus:outline-none ring-offset-gray-100 ring-2 ring-offset-2 ring-fuchsia-600" 
                                         onClick={handleSetPaths}>Shuffle colors</button>
                             </Link>
                         </div>
                     </div>
-                    <Nightwind 
+                    <Nightwind
                         size="h-16 md:h-20"
                     />
                     <p className="mt-4">Click to toggle dark mode</p>
                 </div>
-                <div className="p-4 text-gray-100 bg-indigo-800 hover:text-teal-100 hover:bg-teal-800 sm:bg-indigo-700 sm:hover:bg-teal-700">
+                <div className="p-4 text-gray-100 bg-indigo-800 hover:text-emerald-100 hover:bg-emerald-800 sm:bg-indigo-700 sm:hover:bg-emerald-700">
                     <h3>This is responsive, hoverable and darkable</h3>
                 </div>
                 <div className="px-4">
