@@ -133,7 +133,7 @@ module.exports = {
   variants: {
     'nightwind': {
       // 'variants': ['focus'],
-      'colorClasses': ['gradient', 'ring', 'ring-offset'] // 'divide', 'placeholder', 'ring', 'ring-offset']
+      'colorClasses': ['gradient', 'ring', 'ring-offset']  // 'divide', 'placeholder', 'ring', 'ring-offset']
     },
     textColor: ({ after }) => after(['group-hover']),
     ringOpacity: ({ after }) => after(['hover']),
