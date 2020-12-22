@@ -10,7 +10,7 @@ import Nightwind from '../components/toggle'
 
 export default function Home() {
 
-    const lines = 12
+    const lines = 8
     const width = 600
     const height = 300
 
@@ -99,6 +99,22 @@ export default function Home() {
                     <h1 className="leading-normal inline-block mx-auto bg-clip-text text-transparent bg-gradient-to-br from-violet-800 to-lightBlue-600">Nightwind</h1>
                     <h3>An automatic, <span className="dark:text-yellow-200">overridable</span>, <span className="text-primary-700 border-b-2 border-gray-100 dark:border-yellow-300 dark:duration-nightwind ">customisable</span></h3>
                     <h3 className="">Tailwind dark mode plugin</h3>
+                    <h3 className="pt-6 bg-gradient-to-r bg-clip-text text-transparent from-pink-400 to-orange-600">Now with automatic dark gradients</h3>
+                    <h3>and smart color mappings</h3>
+                    <div className="inline-block pt-4">
+                        <div className="flex rounded-lg overflow-hidden" style={{ width: '95vw', maxWidth: '500px'}}>
+                            <div className="flex-grow h-7 sm:h-8 bg-rose-50"></div>
+                            <div className="flex-grow h-7 sm:h-8 bg-rose-100"></div>
+                            <div className="flex-grow h-7 sm:h-8 bg-rose-200"></div>
+                            <div className="flex-grow h-7 sm:h-8 bg-rose-300"></div>
+                            <div className="flex-grow h-7 sm:h-8 bg-rose-400"></div>
+                            <div className="flex-grow h-7 sm:h-8 bg-rose-500"></div>
+                            <div className="flex-grow h-7 sm:h-8 bg-rose-600"></div>
+                            <div className="flex-grow h-7 sm:h-8 bg-rose-700"></div>
+                            <div className="flex-grow h-7 sm:h-8 bg-rose-800"></div>
+                            <div className="flex-grow h-7 sm:h-8 bg-rose-900"></div>
+                        </div>
+                    </div>
                 </div>
                 <div className="px-2">
                     <div className="lines-container">
@@ -111,9 +127,9 @@ export default function Home() {
                 <div className="mb-8 text-center">
                     <div className="pb-8 divide-y-2 divide-lightBlue-700 hover:divide-pink-700">
                     
-                        <div className="pb-6 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 max-w-screen-sm mx-auto cursor-default">
+                        <div className="pb-6 grid grid-cols-2 sm:grid-cols-4 max-w-screen-sm mx-auto cursor-default">
                             {paths.map((path, i) => (
-                                <div key={i} className={`text-sm py-1 bg-white rounded-md m-1.5 border-2 ${path.randomClass} border-${path.randomClass.split('-').splice(1, 2).join('-')} ring-${path.randomClass.split('-').splice(1, 2).join('-')} ring-2 ring-opacity-30 hover:ring-opacity-60`}>
+                                <div key={i} className={`text-sm py-1 bg-white rounded-md m-2 border-2 ${path.randomClass} border-${path.randomClass.split('-').splice(1, 2).join('-')} ring-${path.randomClass.split('-').splice(1, 2).join('-')} ring-2 ring-opacity-30 hover:ring-opacity-60`}>
                                     <p>
                                         {path.randomClass.split('-').splice(1, 2).join('-')}
                                     </p>

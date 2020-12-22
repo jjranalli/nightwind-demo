@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   darkMode: 'class',
+  
   theme: {
     colors: {
       transparent: 'transparent',
@@ -34,6 +35,16 @@ module.exports = {
       'lg': '1024px',
       'xl': '1280px'
     },
+    nightwind: {
+      colors: {
+        white: "gray.900",
+        black: "gray.50",
+        rose: {
+          default: 'blue',
+          100: 'yellow.300'
+        },
+      },
+    },
     extend: {
       colors: {
         'primary': {
@@ -49,13 +60,6 @@ module.exports = {
       }
     },
   },
-  // experimental: {
-  //   darkModeVariant: true
-  // },
-  // dark: 'class',
-  // future: {
-  //   removeDeprecatedGapUtilities: true,
-  // },
   purge: {
   // enabled: true,
   enabled: false,
