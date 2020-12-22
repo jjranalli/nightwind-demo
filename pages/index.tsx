@@ -18,8 +18,8 @@ export default function Home() {
 
     function randomWave() {
         const randomWeight = Math.floor(Math.random() * (10 - 3) + 3) * 100;
-        const randomIndex = Math.floor(Math.random() * (17))
-        const classes = ['red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'lightBlue', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink', 'rose']
+        const randomIndex = Math.floor(Math.random() * (16))
+        const classes = ['red', 'orange', 'amber', 'yellow', 'lime', 'green', 'emerald', 'teal', 'cyan', 'lightBlue', 'blue', 'indigo', 'violet', 'purple', 'fuchsia', 'pink']
         const randomClass = `text-${classes[randomIndex]}-${randomWeight}`
 
         return randomClass
