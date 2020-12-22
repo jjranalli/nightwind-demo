@@ -48,10 +48,9 @@ module.exports = {
     extend: {
       colors: {
         'primary': {
-          100: '#caf0f8',
+          50: '#caf0f8',
           300: '#90e0ef',
-          500: '#00b4d8',
-          700: '#0077b6',
+          600: '#0077b6',
           900: '#03045e',
         }
       },
@@ -61,8 +60,8 @@ module.exports = {
     },
   },
   purge: {
-  // enabled: true,
-  enabled: false,
+  enabled: true,
+  // enabled: false,
   content: [
     './pages/**/*.tsx',
     './pages/**/*.js',

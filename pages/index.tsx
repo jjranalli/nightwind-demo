@@ -97,7 +97,7 @@ export default function Home() {
             <main className="text-center">
                 <div className="md:pt-10 mx-auto max-w-screen-sm">
                     <h1 className="leading-normal inline-block mx-auto bg-clip-text text-transparent bg-gradient-to-br from-violet-800 to-lightBlue-600">Nightwind</h1>
-                    <h3>An automatic, <span className="dark:text-yellow-200">overridable</span>, <span className="text-primary-700 border-b-2 border-gray-100 dark:border-yellow-300 dark:duration-nightwind ">customisable</span></h3>
+                    <h3>An automatic, <span className="dark:text-yellow-200">overridable</span>, <span className="text-primary-600 border-b-2 border-gray-100 dark:border-yellow-300 dark:duration-nightwind ">customisable</span></h3>
                     <h3 className="">Tailwind dark mode plugin</h3>
                     <h3 className="pt-6 bg-gradient-to-r bg-clip-text text-transparent from-pink-400 to-orange-600">Now with automatic dark gradients</h3>
                     <h3>and smart color mappings</h3>
