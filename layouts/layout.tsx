@@ -2,18 +2,11 @@ import Head from 'next/head'
 import Navbar from './navbar/navbar'
 import Footer from './footer/footer'
 
-import { useEffect } from 'react'
-import nightwind from 'nightwind/helper'
-
 export default function Layout({children}) {
 
     const title = 'Nightwind'
     const subtitle = ' - The dark side of Tailwind'
     const description = 'An automatic, overridable, customisable Tailwind dark mode plugin.'
-
-    useEffect(() => {
-        nightwind.initNightwind()
-    }, []);
     
     return(
         <>
@@ -39,9 +32,7 @@ export default function Layout({children}) {
             </Head>
             <div className="relative min-h-screen flex flex-col justify-between">
                 <Navbar />
-
                 {children}
-                
                 <Footer />
             </div>
         </>

@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import nightwind from 'nightwind/helper'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -11,6 +12,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head />
         <body>
+          <script dangerouslySetInnerHTML={{ __html: nightwind.init() }} />
           <Main />
           <NextScript />
           <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script> 

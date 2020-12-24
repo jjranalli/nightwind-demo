@@ -60,17 +60,16 @@ module.exports = {
     },
   },
   purge: {
-  // enabled: true,
-  enabled: false,
+  enabled: true,
+  // enabled: false,
   content: [
     './pages/**/*.tsx',
     './pages/**/*.js',
-    './components/**/*.js',
-    './components/**/*.jsx',
     './components/**/*.tsx',
     './components/**/*.scss',
+    './icons/**/*.tsx',
+    './icons/**/*.scss',
     './layouts/**/*.tsx',
-    './layouts/**/*.js',
     './layouts/**/*.scss',
     './styles/**/*.scss'
     ],

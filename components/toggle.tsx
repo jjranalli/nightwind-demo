@@ -1,13 +1,14 @@
 import nightwind from 'nightwind/helper'
 
 export default function Nightwind(props) {
+
     return (
         <svg 
             width="140" 
             height="140" 
             viewBox="0 0 140 140" 
             fill="none" 
-            onClick={ () => nightwind.toggleNightMode() }
+            onClick={ () => nightwind.toggle() }
             className={`${props.size || 'h-10' } w-auto cursor-pointer group mx-auto`}>
             <circle 
                 cx="70" 

@@ -144,7 +144,7 @@ export default function Home() {
                                         <div className="flex items-center">
                                             <p className="pr-3">Shuffle colors</p>
                                             <div className="transform group-hover:rotate-180 transition-transform duration-500 ease-in-out">
-                                            <ShuffleIcon size="5"/>
+                                            <ShuffleIcon />
                                             </div>
                                         </div>
                                 </button>
