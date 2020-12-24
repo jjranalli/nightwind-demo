@@ -60,8 +60,8 @@ module.exports = {
     },
   },
   purge: {
-  enabled: true,
-  // enabled: false,
+  // enabled: true,
+  enabled: false,
   content: [
     './pages/**/*.tsx',
     './pages/**/*.js',
@@ -140,6 +140,7 @@ module.exports = {
     },
     textColor: ({ after }) => after(['group-hover']),
     ringOpacity: ({ after }) => after(['hover']),
+    rotate: ['group-hover']
   },
 
   plugins: [

@@ -5,6 +5,7 @@ const _ = require('lodash')
 import Head from 'next/head'
 import Layout from '../layouts/layout'
 import Lines from '../layouts/background/lines'
+import ShuffleIcon from '../icons/shuffle'
 
 import Nightwind from '../components/toggle'
 
@@ -98,7 +99,7 @@ export default function Home() {
                 <div className="md:pt-10 mx-auto max-w-screen-sm">
                     <h1 className="leading-normal inline-block mx-auto bg-clip-text text-transparent bg-gradient-to-br from-violet-800 to-lightBlue-600">Nightwind</h1>
                     <h3>An automatic, <span className="dark:text-yellow-200">overridable</span>, <span className="text-primary-600 border-b-2 border-gray-100 dark:border-yellow-300 dark:duration-nightwind ">customisable</span></h3>
-                    <h3 className="">Tailwind dark mode plugin</h3>
+                    <h3>Tailwind dark mode plugin</h3>
                     <h3 className="pt-6 bg-gradient-to-r bg-clip-text text-transparent from-pink-400 to-orange-600">Now with automatic dark gradients</h3>
                     <h3>and smart color mappings</h3>
                     <div className="inline-block pt-4">
@@ -125,7 +126,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="mb-8 text-center">
-                    <div className="pb-8 divide-y-2 divide-lightBlue-700 hover:divide-pink-700">
+                    <div className="pb-8 divide-y-2 divide-lightBlue-700">
                     
                         <div className="pb-6 grid grid-cols-2 sm:grid-cols-4 max-w-screen-sm mx-auto cursor-default">
                             {paths.map((path, i) => (
@@ -138,13 +139,20 @@ export default function Home() {
                         </div>
                         <div className="pt-8">
                             <Link href='#0'>
-                                <button className="bg-indigo-200 hover:bg-indigo-300 rounded-md py-1.5 px-8 focus:outline-none ring-offset-gray-100 ring-2 ring-offset-2 ring-fuchsia-600" 
-                                        onClick={handleSetPaths}>Shuffle colors</button>
+                                <button className="group text-white bg-indigo-700 hover:bg-indigo-800 rounded-md py-2 px-7 focus:outline-none" 
+                                        onClick={handleSetPaths}>
+                                        <div className="flex items-center">
+                                            <p className="pr-3">Shuffle colors</p>
+                                            <div className="transform group-hover:rotate-180 transition-transform duration-500 ease-in-out">
+                                            <ShuffleIcon size="5"/>
+                                            </div>
+                                        </div>
+                                </button>
                             </Link>
                         </div>
                     </div>
                     <Nightwind
-                        size="h-16 md:h-20"
+                        size="h-16"
                     />
                     <p className="mt-4">Click to toggle dark mode</p>
                 </div>
