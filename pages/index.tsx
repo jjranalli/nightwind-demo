@@ -138,16 +138,16 @@ export default function Home() {
               className="flex rounded-lg overflow-hidden"
               style={{ width: "95vw", maxWidth: "500px" }}
             >
-              <div className="flex-grow h-7 sm:h-8 bg-red-50"></div>
-              <div className="flex-grow h-7 sm:h-8 bg-red-100"></div>
-              <div className="flex-grow h-7 sm:h-8 bg-red-200"></div>
-              <div className="flex-grow h-7 sm:h-8 bg-red-300"></div>
-              <div className="flex-grow h-7 sm:h-8 bg-red-400"></div>
-              <div className="flex-grow h-7 sm:h-8 bg-red-500"></div>
-              <div className="flex-grow h-7 sm:h-8 bg-red-600"></div>
-              <div className="flex-grow h-7 sm:h-8 bg-red-700"></div>
-              <div className="flex-grow h-7 sm:h-8 bg-red-800"></div>
-              <div className="flex-grow h-7 sm:h-8 bg-red-900"></div>
+              <div className="flex-grow h-7 sm:h-8 bg-rose-50"></div>
+              <div className="flex-grow h-7 sm:h-8 bg-rose-100"></div>
+              <div className="flex-grow h-7 sm:h-8 bg-rose-200"></div>
+              <div className="flex-grow h-7 sm:h-8 bg-rose-300"></div>
+              <div className="flex-grow h-7 sm:h-8 bg-rose-400"></div>
+              <div className="flex-grow h-7 sm:h-8 bg-rose-500"></div>
+              <div className="flex-grow h-7 sm:h-8 bg-rose-600"></div>
+              <div className="flex-grow h-7 sm:h-8 bg-rose-700"></div>
+              <div className="flex-grow h-7 sm:h-8 bg-rose-800"></div>
+              <div className="flex-grow h-7 sm:h-8 bg-rose-900"></div>
             </div>
           </div>
         </div>
