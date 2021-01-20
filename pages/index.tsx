@@ -4,10 +4,14 @@ const _ = require("lodash")
 
 import Head from "next/head"
 import Layout from "../layouts/layout"
+import Container from "../layouts/container"
 import Lines from "../layouts/background/lines"
 import ShuffleIcon from "../icons/shuffle"
 
 import Nightwind from "../components/toggle"
+import Wave from "../components/waves"
+import FeaturesGrid from "../components/features-grid"
+import Github from "../components/github"
 
 export default function Home() {
   const lines = 8
@@ -123,10 +127,10 @@ export default function Home() {
           </h1>
           <h3>
             An automatic,{" "}
-            <span className="dark:text-yellow-200">overridable</span>,{" "}
             <span className="text-primary-600 border-b-2 border-gray-100 dark:border-yellow-300 dark:duration-nightwind ">
               customisable
             </span>
+            , <span className="dark:text-yellow-200">overridable</span>
           </h3>
           <h3>Tailwind dark mode plugin</h3>
           <h3 className="pt-6 bg-gradient-to-r bg-clip-text text-transparent from-pink-400 to-orange-600">
@@ -157,7 +161,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mb-8 text-center">
-          <div className="pb-8 divide-y-2 divide-lightBlue-700">
+          <div className="pb-8">
             <div className="pb-6 grid grid-cols-2 sm:grid-cols-4 max-w-screen-sm mx-auto cursor-default">
               {paths.map((path, i) => (
                 <div
@@ -176,10 +180,10 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="pt-8">
+            <div className="pt-2">
               <Link href="#0">
                 <button
-                  className="group text-white bg-indigo-700 hover:bg-indigo-800 rounded-md py-2 px-7 focus:outline-none"
+                  className="group px-8 py-2.5 rounded-md focus:outline-none text-white hover:text-blue-300 bg-gray-800 shadow-lg"
                   onClick={handleSetPaths}
                 >
                   <div className="flex items-center">
@@ -192,21 +196,39 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <Nightwind size="h-16" />
-          <p className="mt-4">Click to toggle dark mode</p>
+          <Nightwind size="h-14 sm:h-16" />
+          <p className="mt-5">Click to toggle dark mode</p>
         </div>
-        <div className="p-4 text-gray-100 bg-indigo-800  dark:bg-opacity-40 hover:text-emerald-100 hover:bg-emerald-800 sm:bg-indigo-700 sm:hover:bg-emerald-700">
-          <h3>This is responsive, hoverable and darkable</h3>
-        </div>
-        <div className="px-4">
-          <div className="nightcard">
-            <h3>This is a card with a custom class</h3>
-            <p>With a bunch of @apply color styles</p>
-            <p>
-              <span>and still compatible by default with nightwind</span>
-            </p>
+        <section className="pt-8">
+          <div className="w-full bg-gradient-to-br from-rose-200 via-rose-400 to-rose-500">
+            <Wave />
+            <div className="pt-24 pb-12 sm:pb-16 md:pt-32">
+              <Container>
+                <h1 className="text-white text-3xl pb-8 md:text-5xl md:pb-16 nightwind-prevent">
+                  Features
+                </h1>
+                <FeaturesGrid />
+                <div className="mt-11">
+                  <a
+                    href="https://github.com/jjranalli/nightwind"
+                    rel="noreferrer"
+                    target="_blank"
+                    aria-label="Link to Github"
+                  >
+                    <button className="group px-8 py-2.5 rounded-md focus:outline-none text-white hover:text-blue-300 bg-black shadow-lg">
+                      <div className="flex items-center">
+                        <p className="pr-5">See it on Github</p>
+                        <div className="w-7">
+                          <Github />
+                        </div>
+                      </div>
+                    </button>
+                  </a>
+                </div>
+              </Container>
+            </div>
           </div>
-        </div>
+        </section>
       </main>
     </Layout>
   )

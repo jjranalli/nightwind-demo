@@ -41,7 +41,7 @@ module.exports = {
         black: "gray.50",
         rose: {
           default: "blue",
-          100: "yellow.300",
+          200: "yellow.300",
         },
       },
     },
