@@ -60,7 +60,7 @@ export default function FeaturesGrid() {
       </div>,
     ],
     [
-      "Overrideable",
+      "Overridable",
       <p>
         You can still use the default{" "}
         <span className="font-semibold">'dark:'</span> variant to override the
@@ -177,7 +177,7 @@ export default function FeaturesGrid() {
                             `}
             >
               <div className="flex items-center">
-                <div className="ml-1 mr-3 my-2 w-10 ">
+                <div className="ml-1 mr-3 my-2 w-9 sm:w-10">
                   <FeatureIcon icon={n} />
                 </div>
                 <p className="text-black">{descriptions[n - 1][0]}</p>
