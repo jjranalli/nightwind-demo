@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Chevron from "../icons/chevron"
+import Chevron from "./icons/chevron"
 
 import FeatureIcon from "./feature-icons"
 import Nightwind from "./toggle"

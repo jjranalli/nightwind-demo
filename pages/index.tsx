@@ -6,7 +6,7 @@ import Head from "next/head"
 import Layout from "../layouts/layout"
 import Container from "../layouts/container"
 import Lines from "../layouts/background/lines"
-import ShuffleIcon from "../icons/shuffle"
+import ShuffleIcon from "../components/icons/shuffle"
 
 import Nightwind from "../components/toggle"
 import Wave from "../components/waves"
