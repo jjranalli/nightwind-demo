@@ -1,10 +1,10 @@
 export default function Wave() {
   return (
     <svg
-      viewBox="0 0 1200 126"
+      viewBox="15 2 1170 126"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
-      className="text-white w-full"
+      className="text-white w-screen"
     >
       <path
         fillRule="evenodd"
