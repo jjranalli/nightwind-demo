@@ -1,5 +1,4 @@
 import Nightwind from "../../components/toggle"
-
 import Github from "../../components/github"
 
 export default function Navbar() {
