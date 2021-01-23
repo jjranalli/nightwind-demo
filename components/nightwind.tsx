@@ -1,4 +1,3 @@
-import nightwind from "nightwind/helper"
 import { useTheme } from "next-themes"
 
 export default function Nightwind(props) {
@@ -6,11 +5,9 @@ export default function Nightwind(props) {
 
   const toggle = (e) => {
     e.stopPropagation()
-    if (theme === "light") {
-      document.documentElement.classList.add("dark")
+    if (!document.documentElement.classList.contains("dark")) {
       setTheme("dark")
     } else {
-      document.documentElement.classList.remove("dark")
       setTheme("light")
     }
   }
@@ -22,7 +19,6 @@ export default function Nightwind(props) {
       viewBox="0 0 140 140"
       fill="none"
       onClick={toggle}
-      // onClick={() => nightwind.toggle()}
       className={`${
         props.size || "h-10"
       } w-auto cursor-pointer group mx-auto z-10`}

@@ -1,6 +1,5 @@
 import Head from "next/head"
 import { useTheme } from "next-themes"
-import { useEffect } from "react"
 
 import Navbar from "./navbar/navbar"
 import Footer from "./footer/footer"
@@ -12,14 +11,6 @@ export default function Layout({ children }) {
   const description =
     "An automatic, overridable, customisable Tailwind dark mode plugin."
 
-  const { theme, setTheme } = useTheme()
-
-  useEffect(() => {
-    document.documentElement.classList.contains("dark")
-      ? setTheme("dark")
-      : setTheme("light")
-  }, [])
-
   return (
     <>
       <Head>
@@ -29,7 +20,7 @@ export default function Layout({ children }) {
           rel="stylesheet"
         ></link>
 
-        <script dangerouslySetInnerHTML={{ __html: nightwind.init() }} />
+        {/* <script dangerouslySetInnerHTML={{ __html: nightwind.init() }} /> */}
 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content={description} />

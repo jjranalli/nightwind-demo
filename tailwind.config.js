@@ -60,7 +60,7 @@ module.exports = {
     },
   },
   purge: {
-    // enabled: true,
+    enabled: true,
     // enabled: false,
     content: [
       "./pages/**/*.tsx",

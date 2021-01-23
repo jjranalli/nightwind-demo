@@ -2,7 +2,7 @@ import { useState } from "react"
 import Chevron from "./icons/chevron"
 
 import FeatureIcon from "./feature-icons"
-import Nightwind from "./toggle"
+import Nightwind from "./nightwind"
 
 export default function FeaturesGrid() {
   function range(start, count) {

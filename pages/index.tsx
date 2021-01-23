@@ -8,7 +8,7 @@ import Container from "../layouts/container"
 import Lines from "../layouts/background/lines"
 import ShuffleIcon from "../components/icons/shuffle"
 
-import Nightwind from "../components/toggle"
+import Nightwind from "../components/nightwind"
 import Wave from "../components/waves"
 import FeaturesGrid from "../components/features-grid"
 import Github from "../components/github"
