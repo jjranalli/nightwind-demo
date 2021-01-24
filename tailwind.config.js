@@ -36,6 +36,8 @@ module.exports = {
       xl: "1280px",
     },
     nightwind: {
+      // transitionDuration: false, // default '300ms'
+      colorClasses: ["gradient", "ring", "ring-offset"], // 'divide', 'placeholder', 'ring', 'ring-offset']
       colors: {
         white: "gray.900",
         black: "gray.50",
@@ -53,9 +55,6 @@ module.exports = {
           600: "#0077b6",
           900: "#03045e",
         },
-      },
-      transitionDuration: {
-        // 'nightwind': '200ms' // default '300ms'
       },
     },
   },
@@ -437,16 +436,7 @@ module.exports = {
   },
 
   variants: {
-    nightwind: {
-      // 'variants': ['focus'],
-      colorClasses: [
-        "gradient",
-        "ring",
-        "ring-offset",
-        "divide",
-        "placeholder",
-      ], // 'divide', 'placeholder', 'ring', 'ring-offset']
-    },
+    // nightwind: ["group-hover"],
     textColor: ({ after }) => after(["group-hover"]),
     ringOpacity: ({ after }) => after(["hover"]),
     rotate: ["group-hover"],
