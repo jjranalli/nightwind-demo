@@ -178,7 +178,7 @@ export default function DocsLandingPage() {
         <section className="md:col-span-3 flex flex-wrap md:flex-nowrap items-center bg-gray-800 shadow-lg rounded-2xl py-6 md:py-4 px-6 md:pr-5 space-y-4 md:space-y-0 md:space-x-8">
           <h2 className="flex-none">
             <span className="sr-only">Tailwind UI</span>
-            <TuiLogo className="w-40 h-auto" />
+            <TuiLogo className="w-40 h-auto text-white" />
           </h2>
           <p className="flex-auto text-white text-lg font-medium">
             <Widont>Beautiful UI components, crafted by the creators of Tailwind CSS</Widont>

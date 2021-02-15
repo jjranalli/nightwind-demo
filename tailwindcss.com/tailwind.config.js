@@ -7,6 +7,10 @@ module.exports = {
   purge: ['./src/**/*.{js,mdx}'],
   darkMode: 'class',
   theme: {
+    nightwind: {
+      typography: true,
+      colorClasses: ['gradient', 'ring', 'ring-offset', 'divide', 'placeholder'],
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -166,7 +170,7 @@ module.exports = {
       }),
       boxShadow: {
         px: '0 0 0 1px rgba(0, 0, 0, 0.5)',
-        link: 'inset 0 -0.125em 0 0 #fff, inset 0 -0.375em 0 0 rgba(165, 243, 252, 0.4)',
+        link: 'inset 0 -0.2em 0 0 rgba(165, 243, 252, 0.4)',
       },
       keyframes: {
         'flash-code': {
@@ -197,12 +201,13 @@ module.exports = {
     },
   },
   variants: {
+    nightwind: ['group-hover', 'active', 'focus'],
     extend: {
       backgroundColor: ['odd', 'even', 'active'],
       borderWidth: ['first', 'last', 'hover', 'focus'],
       cursor: ['active'],
       opacity: ['disabled'],
-      textColor: ['group-focus'],
+      textColor: ['group-focus', 'group-hover'],
       ringWidth: ['focus-visible'],
       ringOffsetWidth: ['focus-visible'],
       ringOffsetColor: ['focus-visible'],
@@ -213,6 +218,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
+    require('nightwind'),
     function ({ addUtilities, theme }) {
       const shadows = theme('boxShadow')
       addUtilities(

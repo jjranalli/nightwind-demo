@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { VersionSwitcher } from '@/components/VersionSwitcher'
 import { Search } from '@/components/Search'
+import Nightwind from '@/components/Nightwind'
 import clsx from 'clsx'
 import Router from 'next/router'
 import { Logo } from '@/components/Logo'
@@ -27,8 +28,9 @@ export function Header({ navIsOpen, onNavToggle }) {
           <Search />
           <div className="lg:w-64 pl-8 flex-shrink-0 flex items-center justify-end space-x-6">
             <VersionSwitcher className="hidden lg:block" />
+            <Nightwind size="h-7" />
             <a
-              href="https://github.com/tailwindlabs/tailwindcss"
+              href="https://github.com/jjranalli/nightwind"
               className="text-gray-400 hover:text-gray-500 transition-colors duration-200"
             >
               <span className="sr-only">Tailwind CSS on GitHub</span>

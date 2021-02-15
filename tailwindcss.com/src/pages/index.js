@@ -18,6 +18,7 @@ import { Logo } from '@/components/Logo'
 import { Footer } from '@/components/home/Footer'
 import NextLink from 'next/link'
 import Head from 'next/head'
+import Nightwind from '@/components/Nightwind'
 
 function NpmInstallButton() {
   const [state, setState] = useState('idle')
@@ -94,8 +95,9 @@ export default function Home() {
                   <span className="hidden sm:inline">Documentation</span>
                 </a>
               </NextLink>
+              <Nightwind size="h-7" />
               <a
-                href="https://github.com/tailwindlabs/tailwindcss"
+                href="https://github.com/jjranalli/nightwind"
                 className="text-gray-400 hover:text-gray-500 transition-colors duration-200"
               >
                 <span className="sr-only">Tailwind CSS on GitHub</span>
@@ -142,8 +144,7 @@ export default function Home() {
                   href="https://adamwathan.me/css-utility-classes-and-separation-of-concerns/"
                   className="text-light-blue-600 font-semibold"
                   style={{
-                    boxShadow:
-                      'inset 0 -0.1666666667em 0 0 #fff, inset 0 -0.3333333333em 0 0 #bae6fd',
+                    boxShadow: 'inset 0 -0.16666666em 0 0 #bae6fd',
                   }}
                 >
                   a few thousand words

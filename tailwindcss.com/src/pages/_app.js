@@ -10,6 +10,7 @@ import Head from 'next/head'
 import twitterLargeCard from '@/img/twitter-large-card.jpg'
 import { ResizeObserver } from '@juggle/resize-observer'
 import 'intersection-observer'
+import { ThemeProvider } from 'next-themes'
 
 if (typeof window !== 'undefined' && !('ResizeObserver' in window)) {
   window.ResizeObserver = ResizeObserver
@@ -88,12 +89,14 @@ export default function App({ Component, pageProps, router }) {
           content={`https://tailwindcss.com${twitterLargeCard}`}
         />
       </Head>
-      {router.pathname !== '/' && (
-        <Header navIsOpen={navIsOpen} onNavToggle={(isOpen) => setNavIsOpen(isOpen)} />
-      )}
-      <Layout {...layoutProps}>
-        <Component {...pageProps} />
-      </Layout>
+      <ThemeProvider attribute="class" storageKey="nightwind-mode" defaultTheme="system">
+        {router.pathname !== '/' && (
+          <Header navIsOpen={navIsOpen} onNavToggle={(isOpen) => setNavIsOpen(isOpen)} />
+        )}
+        <Layout {...layoutProps}>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
     </>
   )
 }

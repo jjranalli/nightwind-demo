@@ -8,12 +8,7 @@ export default class Document extends NextDocument {
 
   render() {
     return (
-      <Html
-        lang="en"
-        className={`text-gray-500 antialiased ${
-          this.props.dangerousAsPath.startsWith('/examples/') ? '' : 'bg-white'
-        }`}
-      >
+      <Html lang="en" className="nightwind antialiased">
         <Head>
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -22,7 +17,11 @@ export default class Document extends NextDocument {
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00b4b6" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
-        <body>
+        <body
+          className={`text-gray-500 ${
+            this.props.dangerousAsPath.startsWith('/examples/') ? '' : 'bg-white'
+          }`}
+        >
           <Main />
           <NextScript />
           <script> </script>
