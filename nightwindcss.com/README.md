@@ -1,5 +1,5 @@
-# Nightwind - Demo
+# nightwindcss.com - Nightwind demo website
 
-A demo website to showcase the Nightwind plugin – https://nightwindcss.com
+https://nightwindcss.com
 
-You can find the Nightwind plugin [here](https://github.com/jjranalli/nightwind).
+A demo website to showcase the [Nightwind plugin](https://github.com/jjranalli/nightwind).
