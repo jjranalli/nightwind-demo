@@ -1,6 +1,6 @@
-# Nightwind demo websites - Demo
+# Nightwind demo websites
 
-Collection of websites to showcase the [Nightwind plugin](https://nightwindcss.com)
+Collection of websites to showcase the [Nightwind plugin](https://github.com/jjranalli/nightwind)
 
-- [nightwindcss.com](https://nightwindcss.com)
-- Tailwindcss.com website clone with dark mode https://night-tailwindcss.vercel.app
+- Nightwind website – [nightwindcss.com](https://nightwindcss.com)
+- Tailwindcss.com clone with dark mode – https://night-tailwindcss.vercel.app
