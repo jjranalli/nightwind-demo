@@ -7,6 +7,7 @@ import Layout from "../layouts/layout"
 import Container from "../layouts/container"
 import Lines from "../layouts/background/lines"
 import ShuffleIcon from "../components/icons/shuffle"
+import Card from "../components/card"
 
 import Nightwind from "../components/nightwind"
 import Wave from "../components/waves"
@@ -202,28 +203,44 @@ export default function Home() {
         <section className="pt-8">
           <div className="w-full bg-gradient-to-br from-rose-200 via-rose-400 to-rose-500">
             <Wave />
-            <div className="pt-24 pb-12 sm:pb-16 md:pt-32">
+            <div className="pt-24 pb-12 md:pt-32">
               <Container>
-                <h1 className="text-white text-3xl pb-8 md:text-5xl md:pb-16 nightwind-prevent">
-                  Features
-                </h1>
-                <FeaturesGrid />
-                <div className="mt-11">
-                  <a
-                    href="https://github.com/jjranalli/nightwind"
-                    rel="noreferrer"
-                    target="_blank"
-                    aria-label="Link to Github"
-                  >
-                    <button className="group px-8 py-2.5 rounded-md focus:outline-none text-white hover:text-blue-300 bg-black shadow-lg">
-                      <div className="flex items-center">
-                        <p className="pr-5">See it on Github</p>
-                        <div className="w-7">
-                          <Github />
+                <div>
+                  <h1 className="text-white text-3xl pb-8 md:text-5xl md:pb-16 nightwind-prevent">
+                    Features
+                  </h1>
+                  <FeaturesGrid />
+                  <div className="mt-11">
+                    <a
+                      href="https://github.com/jjranalli/nightwind"
+                      rel="noreferrer"
+                      target="_blank"
+                      aria-label="Link to Github"
+                    >
+                      <button className="group px-8 py-2.5 rounded-md focus:outline-none text-white hover:text-blue-300 bg-black shadow-lg">
+                        <div className="flex items-center">
+                          <p className="pr-5">See it on Github</p>
+                          <div className="w-7">
+                            <Github />
+                          </div>
                         </div>
-                      </div>
-                    </button>
-                  </a>
+                      </button>
+                    </a>
+                  </div>
+                </div>
+                <div className="pt-14 md:pt-20">
+                  <h1 className="text-white text-2xl pb-4 md:text-4xl md:pb-6 nightwind-prevent">
+                    Demo websites
+                  </h1>
+                  <div className="text-left">
+                    <Card
+                      href="https://night-tailwindcss.vercel.app"
+                      srcImg="/card-tailwindcss.jpg"
+                      srcImgHover="/cardhover-tailwindcss.jpg"
+                      name="Tailwindcss.com (dark clone)"
+                      descr="A clone of the original Tailwind website, with a Nightwind-generated dark mode"
+                    />
+                  </div>
                 </div>
               </Container>
             </div>

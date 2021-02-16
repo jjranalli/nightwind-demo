@@ -59,8 +59,6 @@ module.exports = {
     },
   },
   purge: {
-    enabled: true,
-    // enabled: false,
     content: [
       "./pages/**/*.tsx",
       "./pages/**/*.js",

@@ -118,14 +118,14 @@ export default function FeaturesGrid() {
           you to initialize and toggle dark mode easily.
         </p>
         <p className="pt-2">
-          No complicated setup required, just{" "}
+          No complicated setup required,{" "}
           <a
             rel="noreferrer"
             target="_blank"
             href="https://github.com/jjranalli/nightwind#helper-functions"
             className="underline hover:text-rose-600 duration-150"
           >
-            add a script in your {`<head>`} and buttons
+            get up and running in a few minutes
           </a>
           .
         </p>
@@ -136,7 +136,10 @@ export default function FeaturesGrid() {
       <div>
         <p>
           Nightwind supports all Tailwind variants and color classes, including
-          those inside @apply custom classes.
+          those inside @apply custom classes.{" "}
+          <span className="font-semibold">
+            It even supports the Typography plugin!
+          </span>
         </p>
         <p className="pt-2">
           It also makes it easy to make any element stay the same in both light
