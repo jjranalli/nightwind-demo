@@ -40,7 +40,7 @@ module.exports = {
       },
     },
     nightwind: {
-      transitionDuration: "0ms",
+      transitionDuration: false,
       colorClasses: ["gradient", "ring", "ring-offset"], // 'divide', 'placeholder', 'ring', 'ring-offset']
       colors: {
         white: "gray.900",
