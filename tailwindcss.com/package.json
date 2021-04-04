@@ -43,7 +43,7 @@
     "minimatch": "^3.0.4",
     "next": "^10.0.1",
     "next-themes": "0.0.10",
-    "nightwind": "^1.1.10",
+    "nightwind": "^1.1.11",
     "postcss": "^8.1.7",
     "postcss-focus-visible": "^5.0.0",
     "postcss-nested": "^4.2.3",
