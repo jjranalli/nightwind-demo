@@ -1,6 +1,3 @@
-# Nightwind demo websites
+# nightwindcss.com - Jit Issue reproduction repo
 
-Collection of websites to showcase the [Nightwind plugin](https://github.com/jjranalli/nightwind)
-
-- Nightwind website – [nightwindcss.com](https://nightwindcss.com)
-- Tailwindcss.com clone with dark mode – https://night-tailwindcss.vercel.app
+https://nightwindcss-git-jit-jacoporanalli.vercel.app/

@@ -145,17 +145,17 @@ export default function Home() {
             </div>
             <div className="space-y-4">
               <h3>1) sm test</h3>
-              <h3 className="test-sm">I have @apply :sm styling</h3>
-              <h3 className="bg-rose-300 sm:text-amber-700">
-                I have inline :sm styling
+              <h3 className="test-sm">I have @apply sm: styling</h3>
+              <h3 className="bg-gray-200 sm:bg-rose-600">
+                I have inline sm: styling
               </h3>
               <p>Works as expected</p>
             </div>
             <div className="space-y-4">
               <h3>2) hover test</h3>
-              <h3 className="test-hover">I have @apply :hover styling</h3>
-              <h3 className="bg-rose-300 hover:text-amber-700">
-                I have inline :hover styling
+              <h3 className="test-hover">I have @apply hover: styling</h3>
+              <h3 className="bg-gray-200 hover:bg-rose-600">
+                I have inline hover: styling
               </h3>
               <p>
                 Jit Issue: The '.dark .test-hover:hover' class is not being
@@ -164,9 +164,9 @@ export default function Home() {
             </div>
             <div className="space-y-4">
               <h3>3) sm:hover test</h3>
-              <h3 className="test-sm-hover">I have @apply :sm:hover styling</h3>
-              <h3 className="bg-rose-300 sm:hover:text-amber-700">
-                I have inline :sm:hover styling
+              <h3 className="test-sm-hover">I have @apply sm:hover: styling</h3>
+              <h3 className="bg-gray-200 sm:hover:bg-rose-600">
+                I have inline sm:hover: styling
               </h3>
               <p>
                 Jit Issue: The '@media (min-width: 640px) .dark
@@ -174,7 +174,7 @@ export default function Home() {
               </p>
               <p>
                 Jit Issue: The '@media (min-width: 640px) .dark
-                .sm\:hover\:text-amber-700:hover' class is not being generated
+                .sm\:hover\:bg-rose-600:hover' class is not being generated
               </p>
             </div>
           </div>

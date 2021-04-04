@@ -1,4 +1,4 @@
-# nightwindcss.com - Nightwind demo website
+# nightwindcss.com - Jit Issue reproduction repo
 
 https://nightwindcss.com
 
