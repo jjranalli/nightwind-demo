@@ -40,7 +40,7 @@ module.exports = {
       },
     },
     nightwind: {
-      // transitionDuration: false, // default '300ms'
+      transitionDuration: "0ms",
       colorClasses: ["gradient", "ring", "ring-offset"], // 'divide', 'placeholder', 'ring', 'ring-offset']
       colors: {
         white: "gray.900",
@@ -53,7 +53,7 @@ module.exports = {
     },
   },
   purge: {
-    enabled: true,
+    // enabled: true,
     content: [
       "./pages/**/*.tsx",
       "./pages/**/*.js",
@@ -68,15 +68,12 @@ module.exports = {
     ],
   },
 
-  variants: {
-    // nightwind: ["group-hover"],
-    textColor: ({ after }) => after(["group-hover"]),
-    ringOpacity: ({ after }) => after(["hover"]),
-    rotate: ["group-hover"],
-  },
+  // variants: {
+  //   nightwind: ["active"],
+  //   // textColor: ({ after }) => after(["group-hover"]),
+  //   // ringOpacity: ({ after }) => after(["hover"]),
+  //   // rotate: ["group-hover"],
+  // },
 
-  plugins: [
-    require("nightwind"),
-    // plugin(),
-  ],
+  plugins: [require("nightwind")],
 }

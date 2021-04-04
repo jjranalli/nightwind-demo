@@ -1,0 +1,11 @@
+.test-sm {
+  @apply bg-rose-300 sm:text-amber-700;
+}
+
+.test-hover {
+  @apply bg-rose-300 hover:text-amber-700;
+}
+
+.test-sm-hover {
+  @apply bg-rose-300 sm:hover:text-amber-700;
+}

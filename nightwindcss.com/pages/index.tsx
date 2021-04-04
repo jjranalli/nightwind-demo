@@ -134,6 +134,51 @@ export default function Home() {
             , <span className="dark:text-yellow-200">overridable</span>
           </h3>
           <h3>Tailwind dark mode plugin</h3>
+
+          <div className="py-16 space-y-8 px-4">
+            <div>
+              <h2 className="underline">TailwindCSS JIT test</h2>
+              <p>
+                Main Jit issue: plugin is not generating variant/screen classes
+                as expected
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3>1) sm test</h3>
+              <h3 className="test-sm">I have @apply :sm styling</h3>
+              <h3 className="bg-rose-300 sm:text-amber-700">
+                I have inline :sm styling
+              </h3>
+              <p>Works as expected</p>
+            </div>
+            <div className="space-y-4">
+              <h3>2) hover test</h3>
+              <h3 className="test-hover">I have @apply :hover styling</h3>
+              <h3 className="bg-rose-300 hover:text-amber-700">
+                I have inline :hover styling
+              </h3>
+              <p>
+                Jit Issue: The '.dark .test-hover:hover' class is not being
+                generated
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3>3) sm:hover test</h3>
+              <h3 className="test-sm-hover">I have @apply :sm:hover styling</h3>
+              <h3 className="bg-rose-300 sm:hover:text-amber-700">
+                I have inline :sm:hover styling
+              </h3>
+              <p>
+                Jit Issue: The '@media (min-width: 640px) .dark
+                .test-sm-hover:hover' class is not being generated
+              </p>
+              <p>
+                Jit Issue: The '@media (min-width: 640px) .dark
+                .sm\:hover\:text-amber-700:hover' class is not being generated
+              </p>
+            </div>
+          </div>
+
           <h3 className="pt-6 bg-gradient-to-r bg-clip-text text-transparent from-pink-400 to-orange-600">
             Now with automatic dark gradients
           </h3>
