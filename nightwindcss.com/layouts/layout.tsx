@@ -26,7 +26,7 @@ export default function Layout({ children }) {
         <meta name="description" content={description} />
 
         <meta property="og:title" content={title} />
-        <meta property="og:image" content="/og_image.jpg" />
+        <meta property="og:image" content="/og_image.png" />
         <meta property="og:description" content={description} />
         <meta property="og:url" content="https://nightwindcss.com" />
 

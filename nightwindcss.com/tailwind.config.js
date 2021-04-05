@@ -75,8 +75,5 @@ module.exports = {
     rotate: ["group-hover"],
   },
 
-  plugins: [
-    require("nightwind"),
-    // plugin(),
-  ],
+  plugins: [require("nightwind")],
 }
