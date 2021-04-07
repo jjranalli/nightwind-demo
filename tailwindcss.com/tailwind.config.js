@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     nightwind: {
       typography: true,
+      transitionDuration: false,
       colorClasses: ['gradient', 'ring', 'ring-offset', 'divide', 'placeholder'],
     },
     colors: {
